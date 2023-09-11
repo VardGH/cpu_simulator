@@ -16,6 +16,35 @@ This project is a CPU emulator written in C++. It simulates the operation of a s
 
 - **ALU (Arithmetic Logic Unit)**: The ALU is responsible for performing arithmetic and logical operations on CPU registers. It is a separate class that interacts with the CPU.
 
+## Getting Started
+
+To use this CPU simulator, follow these steps:
+
+1. Clone the repository to your local machine.
+
+2. Build the emulator by compiling the source code.
+
+   ```bash
+   g++ -o cpu_emulator cpu.cpp main.cpp
+   ```
+
+3. Create a program file with your assembly-like instructions. Each line should contain an instruction and its operands.
+
+   ```assembly
+   MOV R1, 42
+   ADD R2, R1
+   CMP R2, 50
+   JG label1
+   :label1
+   SUB R2, R1
+   ```
+
+4. Execute the program.
+
+   ```bash
+   ./cpu_emulator execute
+   `
+
 ## Usage
 
 The simulator accepts the following commands:
