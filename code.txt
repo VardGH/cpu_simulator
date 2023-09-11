@@ -1,0 +1,14 @@
+MOV R1, 11
+MOV R3, R1
+:l1
+PRINT R1,
+ADD R10, 1
+DEC R1,
+CMP R1, 9
+JG l1,
+JL l2,
+MOV R1, 9
+MOV R3, R1
+:l2
+SUB R3, 2
+ADD R5, 30
